@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ectra_2</title>
+    <!-- Google Fonts Start  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- Google Fonts End  -->
+
+    <!-- CSS Link Start  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- CSS Link End  -->
+
+    <style>
+       /* Projects CSS Start  */
+
+
+.team-mid{
+    margin-top: 30px;
+    
+}
+.mid-img{
+    position: relative;
+    background-repeat: no-repeat;
+}
+.team-overlay{
+    background: rgba(0, 0, 0, 0.685);
+    width: 0px;
+    position: absolute;
+    transition: all linear .9s;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+ 
+    
+}
+.team-mid:hover .team-overlay{
+    width: 100%;
+}
+.team-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.team-icon i{
+    font-size: 50px;
+    color: white;
+    transition: all linear .3s;
+
+}
+.team-mid:hover .team-icon{
+   opacity: 1;
+}
+.team-icon i:hover{
+    color: #1da1f2;
+}
+.team-detail h3{
+    padding-top: 30px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+}
+.team-detail h4{
+   padding-bottom: 5px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+
+}
+.team-detail p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+
+}
+.team-detail{
+    opacity: 0;
+    transition: all linear .9s;
+}
+.team-mid:hover .team-detail{
+   opacity: 1;
+}
+.team-detail{
+    border: 1px solid #9b9b9b;
+    border-top: none;
+    border-radius: 3px;
+}
+
+    </style>
+</head>
+<body>
+   
+   <!-- Projects Part Start  -->
+ <!-- team part Start  -->
+<section id="team">
+    
+    <div class="container">
+
+
+
+         <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-mid">
+                       <div class="mid-img">
+                           <img src="images/team1.jpg" alt=""  class="img-fluid w-100">
+                           <div class="team-overlay ">
+                               <div class="team-icon d-flex align-items-center justify-content-center">
+                                   <a href="#"><i class="fab fa-facebook"></i></a>
+                                   <a href="#" style="margin: 0px 10px;"><i class="fab fa-twitter-square"></i></a>
+                                  <a href="#"><i class="fab fa-buy-n-large"></i></a>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="team-detail text-center">
+                           <h3>Sakeba Aney</h3>
+                           <h4>Developer</h4>
+                           <p>Sakeba Aney is Hardworking rson. She never ummy text of the prining and typesetting industry.</p>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+ 
+ 
+            
+    </div>
+</section>
+<!-- team part Ends  -->
+  <!-- Projects Part End   -->
+
+
+    <!-- JS Link Start  -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- JS Link End  -->
+</body>
+</html>

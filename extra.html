@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts Start  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- Google Fonts End  -->
+
+    <!-- CSS Link Start  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS Link End  -->
+
+    <style>
+       /* Projects CSS Start  */
+#project{
+    padding-top: 82px;
+    padding-bottom: 80px;
+}
+
+.project-gal{
+    margin-bottom: 30px;
+}
+.project-gal:hover .project-overlay{
+    opacity: 1;
+}
+.project-img{
+    position: relative;
+}
+.project-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.7);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.project-overlay a{
+    padding-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    transition: all linear .3s;
+}
+.project-overlay a:hover{
+    color: #c7b299;
+}
+.project-overlay a:last-child{
+    padding-right: 0;
+}
+.project-gal:hover .project-text{
+    background-color: #362f2d;
+}
+.project-gal:hover .project-text:after{
+    background-color: #362f2d;
+}
+.project-gal:hover .project-text h4{
+    color: #fff;
+}
+.project-gal:hover .project-text p{
+    color: #c7b299;
+}
+.project-text{
+    padding: 30px 28px;
+    background-color: #fbfaf8;
+    position: relative;
+    transition: all linear .3s;
+}
+.project-text::after {
+	content: '';
+	position: absolute;
+	top: -12px;
+	left: 38px;
+	width: 25px;
+	height: 25px;
+	background-color: #fbfaf8;
+	transform: rotate(45deg);
+    transition: all linear .3s;
+}
+.project-text h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #c7b299;
+    padding-bottom: 15px;
+    transition: all linear .3s;
+}
+.project-text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #d1d1d1;
+    transition: all linear .3s;
+}
+/* Projects CSS End  */
+    </style>
+</head>
+<body>
+   
+   <!-- Projects Part Start  -->
+   <section id="project">
+    <div class="container">
+    
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="project-gal">
+            <div class="project-img">
+              <img src="images/team1.jpg" alt="p-img-1" class="img-fluid w-100">
+              <div class="project-overlay d-flex align-items-center justify-content-center">
+                <a href="#"><i class="fas fa-link"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
+              </div>
+            </div>
+            <div class="project-text">
+              <h4>Claritas Etiam Processus</h4>
+              <p>Photography, Nature</p>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+    </div>
+  </section>
+  <!-- Projects Part End   -->
+
+
+    <!-- JS Link Start  -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- JS Link End  -->
+</body>
+</html>
